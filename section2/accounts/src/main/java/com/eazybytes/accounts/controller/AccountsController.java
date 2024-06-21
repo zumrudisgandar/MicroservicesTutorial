@@ -32,7 +32,7 @@ import org.springframework.web.bind.annotation.*;
 @Validated
 public class AccountsController {
 
-    private IAccountService iAccountsService;
+    private final IAccountService iAccountsService;
 
     public AccountsController(IAccountService iAccountsService){
         this.iAccountsService = iAccountsService;
