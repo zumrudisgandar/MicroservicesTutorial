@@ -41,6 +41,8 @@ resilience4j.circuitbreaker:
   configs:
     default:
       slidingWindowSize: 10  # Circuit Breaker will keep track of the outcome (success or failure) of the last 10 requests
-      permittedNumberOfCallsInHalfOpenState: 2 # allow 2 request in the half-open status, based on this 2 requests, go to the either close or open
-      failureRateThreshold: 10 # about what percentage of those observed requests need to be failures before the Circuit Breaker trips and opens.
+      permittedNumberOfCallsInHalfOpenState: 2 # allow 2 request in the half-open status, based on this 2 requests,
+      #go to the either close or open
+      failureRateThreshold: 10 # about what percentage of those observed requests need to be failures before the
+      #Circuit Breaker trips and opens.
       waitDurationInOpenState: 5000 # wait 5 secs before going to half-open and allow partial traffic
